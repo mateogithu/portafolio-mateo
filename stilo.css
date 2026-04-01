@@ -1,0 +1,77 @@
+/* --- ESTILO GENERAL --- */
+body {
+    background-color: #121212; /* Un negro más suave, tipo "Material Design" */
+    color: #e0e0e0;            /* Un blanco grisáceo que no cansa la vista */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Una letra más moderna */
+    line-height: 1.8;          /* Más espacio entre líneas para leer mejor */
+    padding: 60px 20px;        /* Mucho aire arriba y abajo, y un poco a los costados */
+    max-width: 800px;          /* Limitamos el ancho para que no se estire en monitores grandes */
+    margin: 0 auto;            /* Centra todo el contenido en la pantalla */
+}
+
+/* --- ENCABEZADO (TU NOMBRE) --- */
+header {
+    text-align: center;        /* Centramos tu nombre y título */
+    margin-bottom: 50px;       /* Separación grande con el resto */
+    border-bottom: 2px solid #333; /* Una línea sutil divisoria */
+    padding-bottom: 20px;
+}
+
+h1 {
+    color: #ffffff;            /* Tu nombre en blanco puro */
+    font-size: 2.5em;          /* Un poco más grande */
+    margin-bottom: 10px;
+}
+
+header p strong {
+    color: #ffcc00;            /* Tu amarillo dorado para resaltar tu rol */
+    font-size: 1.2em;
+}
+
+/* --- SECCIONES --- */
+section {
+    margin-bottom: 40px;       /* Espacio entre Contacto, Proyectos, etc. */
+}
+
+h2 {
+    color: #ffcc00;            /* Amarillo para los títulos de sección */
+    font-size: 1.5em;
+    border-left: 4px solid #ffcc00; /* Un detalle visual moderno a la izquierda */
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+/* --- LISTAS (TUS PROYECTOS Y SKILLS) --- */
+ul {
+    list-style-type: none;     /* Sacamos los puntitos genéricos */
+    padding: 0;
+}
+
+li {
+    background-color: #1e1e1e; /* Un fondo gris muy sutil para cada ítem */
+    padding: 15px 20px;        /* Espacio de aire adentro de cada ítem */
+    margin-bottom: 15px;       /* Separación entre cada proyecto/habilidad */
+    border-radius: 8px;        /* Bordes redondeados modernos */
+    border: 1px solid #333;    /* Un borde casi invisible */
+    transition: transform 0.2s ease; /* Un efecto sutil al pasar el mouse */
+}
+
+li:hover {
+    transform: translateY(-3px); /* Se levanta un poquito al pasar el mouse */
+    background-color: #252525; /* Cambia de color sutilmente */
+}
+
+li strong {
+    color: #ffffff;            /* Los nombres de proyectos/skills en blanco */
+}
+
+/* --- LINKS --- */
+a {
+    color: #4db8ff;            /* Un azul clarito para los links */
+    text-decoration: none;     /* Sacamos el subrayado feo */
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline; /* Volvemos a subrayar solo al pasar el mouse */
+}
