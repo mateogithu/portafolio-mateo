@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio de Mateo Stortini — AI Engineer & Full Stack Developer. Especialista en Ciberseguridad On-Premise, Sistemas Autónomos y Backend en Python." />
+  <meta name="author" content="Mateo Stortini" />
+  <meta name="theme-color" content="#070a0f" />
+  <title>Mateo Stortini | AI Engineer &amp; Full Stack Developer</title>
+
+  <!-- Google Fonts: Space Grotesk (Títulos), Inter (Cuerpo) y JetBrains Mono (Código/Terminal) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+
+  <!-- Hoja de estilos principal -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Fondo técnico sutil (Grid + Glow) -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--primary" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--secondary" aria-hidden="true"></div>
+
+  <!-- ==========================================
+       BARRA DE NAVEGACIÓN
+       ========================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#hero" class="navbar__brand" aria-label="Inicio - Mateo Stortini">
+        <span class="brand__prompt">&gt;_</span>
+        <span class="brand__text">mateo<span class="text-accent">.stortini</span></span>
+      </a>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="navbar__nav" id="navMenu" aria-label="Navegación principal">
+        <a href="#proyectos" class="nav__link"><span class="nav__index">01.</span> Proyectos</a>
+        <a href="#stack" class="nav__link"><span class="nav__index">02.</span> Stack</a>
+        <a href="#arquitectura" class="nav__link"><span class="nav__index">03.</span> Enfoque</a>
+        <a href="#contacto" class="nav__link nav__link--cta">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================
+         1. HERO SECTION (ENCABEZADO PRINCIPAL)
+         ========================================== -->
+    <section class="hero section" id="hero">
+      <div class="container hero__grid">
+        <!-- Columna de contenido principal -->
+        <div class="hero__content reveal">
+          <div class="status-badge">
+            <span class="status-badge__dot"></span>
+            <span class="mono">SYS.STATUS: ONLINE // DISPONIBLE PARA PROYECTOS &amp; ROLES REMOTOS</span>
+          </div>
+
+          <p class="hero__greeting mono">Hola, soy</p>
+          <h1 class="hero__title">Mateo Stortini</h1>
+          <h2 class="hero__subtitle">
+            AI Engineer &amp; Full Stack Developer <span class="divider">|</span>
+            <span class="hero__highlight">Especialista en Ciberseguridad On-Premise, Sistemas Autónomos y Backend en Python.</span>
+          </h2>
+
+          <p class="hero__description">
+            Diseño y construyo arquitecturas de software resilientes, sistemas de gobernanza autónoma impulsados por modelos de lenguaje locales (LLMs On-Premise) y plataformas de telemetría en tiempo real con control <em>Human-in-the-Loop</em>.
+          </p>
+
+          <!-- Botones de llamada a la acción obligatorios -->
+          <div class="hero__actions">
+            <a href="#proyectos" class="btn btn--primary">
+              <span>Ver Proyectos</span>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="https://github.com/mateogithu" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.92.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.05 11.05 0 0 1 5.78 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="#contacto" class="btn btn--ghost">
+              <span>Contacto</span>
+            </a>
+          </div>
+
+          <!-- Métricas rápidas de ingeniería -->
+          <div class="hero__metrics">
+            <div class="metric">
+              <span class="metric__value mono">100%</span>
+              <span class="metric__label">Privacidad On-Premise</span>
+            </div>
+            <div class="metric">
+              <span class="metric__value mono">&lt;15ms</span>
+              <span class="metric__label">Telemetría WebSockets</span>
+            </div>
+            <div class="metric">
+              <span class="metric__value mono">HITL</span>
+              <span class="metric__label">Gobernanza Segura</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna de Terminal Interactiva / Visual Tech -->
+        <div class="hero__visual reveal">
+          <div class="terminal" role="region" aria-label="Terminal de demostración de Victoria OS">
+            <div class="terminal__header">
+              <div class="terminal__dots">
+                <span class="dot dot--red"></span>
+                <span class="dot dot--yellow"></span>
+                <span class="dot dot--green"></span>
+              </div>
+              <span class="terminal__title mono">victoria-core@on-premise:~</span>
+              <span class="terminal__badge mono">FASTAPI + WS</span>
+            </div>
+            <div class="terminal__body mono" id="terminalOutput">
+              <div class="term-line"><span class="term-prompt">$</span> python -m victoria.kernel --mode=autonomous --hitl=strict</div>
+              <div class="term-line term-muted">[INFO] Initializing Cyber-Physical Governance Kernel v2.4...</div>
+              <div class="term-line term-muted">[OK] Local LLM Engine connected via Ollama (Zero-Cloud Leakage)</div>
+              <div class="term-line term-muted">[OK] FastAPI Async Event Loop &amp; WebSocket Telemetry Bus active</div>
+              <div class="term-line term-accent">[SHIELD] On-Premise Perimeter &amp; Policy Guardrails: ARMED</div>
+              <div class="term-line">&nbsp;</div>
+              <div class="term-line"><span class="term-prompt">$</span> victoria status --stream</div>
+              <div class="term-telemetry">
+                <div class="telemetry-row">
+                  <span>NODE_LATENCY</span>
+                  <span class="text-accent" id="latencyVal">4.2 ms</span>
+                </div>
+                <div class="telemetry-row">
+                  <span>AUTONOMOUS_AGENTS</span>
+                  <span class="text-accent">ACTIVE (4/4)</span>
+                </div>
+                <div class="telemetry-row">
+                  <span>HITL_PROTOCOL</span>
+                  <span class="text-cyan">VERIFIED_SIGNED</span>
+                </div>
+              </div>
+              <div class="term-line term-cursor-line">
+                <span class="term-prompt">$</span> <span id="typewriterText"></span><span class="cursor" aria-hidden="true">▋</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         2. SECCIÓN DE PROYECTOS DESTACADOS
+         ========================================== -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        <div class="section__header reveal">
+          <div class="section__eyebrow mono">01 // PORTAFOLIO DE INGENIERÍA</div>
+          <h2 class="section__title">Proyectos Destacados</h2>
+          <p class="section__subtitle">
+            Arquitecturas diseñadas desde cero priorizando soberanía de datos, baja latencia y ejecución determinista.
+          </p>
+        </div>
+
+        <!-- PROYECTO ESTRELLA: VICTORIA OS -->
+        <article class="project-featured reveal" aria-labelledby="victoria-title">
+          <div class="project-featured__badge mono">
+            <span class="pulse-dot"></span> PROYECTO ESTRELLA // ARQUITECTURA PRINCIPAL
+          </div>
+
+          <div class="project-featured__grid">
+            <div class="project-featured__info">
+              <h3 class="project-featured__title" id="victoria-title">
+                Victoria — Autonomous Infrastructure Governance OS
+              </h3>
+              <p class="project-featured__desc">
+                Sistema operativo de gobernanza ciber-física desarrollado en <strong>Python</strong>, <strong>FastAPI</strong> y <strong>WebSockets</strong>, diseñado para orquestar infraestructura crítica mediante telemetría en tiempo real, inferencia con <strong>IA local (On-Premise)</strong> y protocolos estrictos <strong>Human-in-the-Loop (HITL)</strong>.
+              </p>
+
+              <ul class="project-featured__highlights">
+                <li>
+                  <span class="check-icon">▹</span>
+                  <span><strong>Orquestación Autónoma con IA Local:</strong> Agentes inteligentes conectados vía Ollama que analizan anomalías sin exponer datos sensibles a nubes externas.</span>
+                </li>
+                <li>
+                  <span class="check-icon">▹</span>
+                  <span><strong>Telemetría Bidireccional en Tiempo Real:</strong> Bus de eventos asíncrono sobre FastAPI y WebSockets para monitoreo continuo de nodos y procesos de red.</span>
+                </li>
+                <li>
+                  <span class="check-icon">▹</span>
+                  <span><strong>Protocolos Human-in-the-Loop (HITL):</strong> Auditoría criptográfica y validación humana obligatoria para acciones críticas de mitigación o reconfiguración.</span>
+                </li>
+              </ul>
+
+              <div class="tag-list">
+                <span class="tag tag--accent">Python</span>
+                <span class="tag tag--accent">FastAPI</span>
+                <span class="tag tag--accent">WebSockets</span>
+                <span class="tag">Ollama / Local LLMs</span>
+                <span class="tag">Human-in-the-Loop</span>
+                <span class="tag">Ciberseguridad On-Premise</span>
+                <span class="tag">Linux Telemetry</span>
+              </div>
+
+              <div class="project-featured__actions">
+                <a href="https://github.com/mateogithu" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">
+                  <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.92.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.05 11.05 0 0 1 5.78 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+                  </svg>
+                  <span>Explorar Arquitectura en GitHub</span>
+                </a>
+                <a href="#contacto" class="btn btn--ghost btn--sm">Solicitar Demo Técnica</a>
+              </div>
+            </div>
+
+            <!-- Panel visual de arquitectura de Victoria OS -->
+            <div class="project-featured__diagram" aria-label="Diagrama de arquitectura de Victoria OS">
+              <div class="arch-box">
+                <div class="arch-header mono">VICTORIA_OS // PIPELINE DE GOBERNANZA</div>
+                <div class="arch-layer">
+                  <span class="arch-step mono">01</span>
+                  <div>
+                    <div class="arch-title">Sensores &amp; Red On-Premise</div>
+                    <div class="arch-sub mono">Ingesta de métricas Linux, sockets y logs de seguridad</div>
+                  </div>
+                </div>
+                <div class="arch-connector mono">↓ WebSockets Stream (Async)</div>
+                <div class="arch-layer arch-layer--highlight">
+                  <span class="arch-step mono">02</span>
+                  <div>
+                    <div class="arch-title">Core FastAPI + Agentes IA (Ollama)</div>
+                    <div class="arch-sub mono">Evaluación contextual, detección de anomalías y propuestas</div>
+                  </div>
+                </div>
+                <div class="arch-connector mono">↓ Política de Control</div>
+                <div class="arch-layer">
+                  <span class="arch-step mono">03</span>
+                  <div>
+                    <div class="arch-title">Protocolo Human-in-the-Loop</div>
+                    <div class="arch-sub mono">Aprobación del operador antes de ejecución en infraestructura</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- GRID DE OTROS PROYECTOS -->
+        <div class="projects-grid">
+          <!-- Proyecto 2: Apps Móviles Kotlin/Java -->
+          <article class="project-card reveal">
+            <div class="project-card__top">
+              <div class="project-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <rect x="6" y="2" width="12" height="20" rx="2" />
+                  <line x1="12" y1="18" x2="12.01" y2="18" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="project-card__links">
+                <a href="https://github.com/mateogithu" target="_blank" rel="noopener noreferrer" aria-label="Ver repositorio en GitHub" class="icon-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <span class="project-card__category mono">MOBILE ENGINEERING // ANDROID</span>
+            <h3 class="project-card__title">Suite de Aplicaciones Móviles Nativas</h3>
+            <p class="project-card__desc">
+              Desarrollo de aplicaciones nativas para Android utilizando <strong>Kotlin</strong> y <strong>Java</strong>, implementando arquitecturas limpias (MVVM), persistencia local, consumo eficiente de APIs REST y experiencias de usuario fluidas orientadas a productividad y control.
+            </p>
+
+            <div class="tag-list project-card__tags">
+              <span class="tag">Kotlin</span>
+              <span class="tag">Java</span>
+              <span class="tag">Android SDK</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">MVVM</span>
+            </div>
+          </article>
+
+          <!-- Proyecto 3: Desarrollos Web & Automatización -->
+          <article class="project-card reveal">
+            <div class="project-card__top">
+              <div class="project-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </div>
+              <div class="project-card__links">
+                <a href="https://github.com/mateogithu" target="_blank" rel="noopener noreferrer" aria-label="Ver repositorio en GitHub" class="icon-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <span class="project-card__category mono">FULL STACK // WEB SYSTEMS</span>
+            <h3 class="project-card__title">Plataformas Web &amp; Dashboards Interactivos</h3>
+            <p class="project-card__desc">
+              Desarrollo de interfaces web modernas, paneles de control responsivos y servicios backend ligeros. Enfoque en rendimiento nativo con HTML5, CSS3 modular, JavaScript ES6+ e integración directa con servicios en Python.
+            </p>
+
+            <div class="tag-list project-card__tags">
+              <span class="tag">JavaScript ES6+</span>
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">Python Backend</span>
+              <span class="tag">Git</span>
+            </div>
+          </article>
+
+          <!-- Proyecto 4: Agentes & Automatización On-Premise -->
+          <article class="project-card reveal">
+            <div class="project-card__top">
+              <div class="project-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"/>
+                </svg>
+              </div>
+              <div class="project-card__links">
+                <a href="https://github.com/mateogithu" target="_blank" rel="noopener noreferrer" aria-label="Ver repositorio en GitHub" class="icon-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <span class="project-card__category mono">SECOPS // AUTOMATION</span>
+            <h3 class="project-card__title">Automatización &amp; Auditoría en Entornos Linux</h3>
+            <p class="project-card__desc">
+              Scripts de hardening, monitoreo de servicios en redes locales On-Premise y pipelines de automatización con agentes autónomos locales para diagnóstico proactivo de sistemas.
+            </p>
+
+            <div class="tag-list project-card__tags">
+              <span class="tag">Linux</span>
+              <span class="tag">Python</span>
+              <span class="tag">Redes On-Premise</span>
+              <span class="tag">Agentes IA</span>
+              <span class="tag">Automatización</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         3. SECCIÓN DE STACK TECNOLÓGICO
+         ========================================== -->
+    <section class="section section--alt" id="stack">
+      <div class="container">
+        <div class="section__header reveal">
+          <div class="section__eyebrow mono">02 // CAPACIDADES TÉCNICAS</div>
+          <h2 class="section__title">Stack Tecnológico</h2>
+          <p class="section__subtitle">
+            Herramientas y tecnologías que utilizo para diseñar sistemas inteligentes, seguros y de alto rendimiento.
+          </p>
+        </div>
+
+        <div class="stack-grid">
+          <!-- Categoría 1: AI & Core -->
+          <div class="stack-card reveal">
+            <div class="stack-card__header">
+              <div class="stack-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 2a4 4 0 0 1 4 4v2a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"/>
+                  <path d="M16 14h2a4 4 0 0 1 4 4v2H2v-2a4 4 0 0 1 4-4h2"/>
+                  <circle cx="12" cy="14" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <span class="stack-card__code mono">CORE_MODULE_01</span>
+                <h3 class="stack-card__title">AI &amp; Core Backend</h3>
+              </div>
+            </div>
+            <p class="stack-card__desc">
+              Desarrollo de motores asíncronos, orquestación de modelos de lenguaje locales y arquitecturas orientadas a eventos.
+            </p>
+            <div class="badge-grid">
+              <div class="tech-badge"><span class="tech-dot"></span>Python</div>
+              <div class="tech-badge"><span class="tech-dot"></span>FastAPI</div>
+              <div class="tech-badge"><span class="tech-dot"></span>WebSockets</div>
+              <div class="tech-badge"><span class="tech-dot"></span>Ollama</div>
+              <div class="tech-badge"><span class="tech-dot"></span>LLMs</div>
+              <div class="tech-badge"><span class="tech-dot"></span>Prompt Engineering</div>
+              <div class="tech-badge"><span class="tech-dot"></span>Agentes Autónomos</div>
+            </div>
+          </div>
+
+          <!-- Categoría 2: Frontend & Web -->
+          <div class="stack-card reveal">
+            <div class="stack-card__header">
+              <div class="stack-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <rect x="2" y="3" width="20" height="14" rx="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </div>
+              <div>
+                <span class="stack-card__code mono">INTERFACE_MODULE_02</span>
+                <h3 class="stack-card__title">Frontend, Web &amp; Mobile</h3>
+              </div>
+            </div>
+            <p class="stack-card__desc">
+              Interfaces limpias y responsivas para visualización de telemetría en tiempo real, control operativo y aplicaciones móviles.
+            </p>
+            <div class="badge-grid">
+              <div class="tech-badge"><span class="tech-dot"></span>HTML5</div>
+              <div class="tech-badge"><span class="tech-dot"></span>CSS3</div>
+              <div class="tech-badge"><span class="tech-dot"></span>JavaScript</div>
+              <div class="tech-badge"><span class="tech-dot"></span>Git &amp; GitHub</div>
+              <div class="tech-badge"><span class="tech-dot"></span>Kotlin</div>
+              <div class="tech-badge"><span class="tech-dot"></span>Java</div>
+            </div>
+          </div>
+
+          <!-- Categoría 3: Infraestructura y Sistemas -->
+          <div class="stack-card reveal">
+            <div class="stack-card__header">
+              <div class="stack-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <rect x="2" y="2" width="20" height="8" rx="2"/>
+                  <rect x="2" y="14" width="20" height="8" rx="2"/>
+                  <line x1="6" y1="6" x2="6.01" y2="6" stroke-width="2.5"/>
+                  <line x1="6" y1="18" x2="6.01" y2="18" stroke-width="2.5"/>
+                </svg>
+              </div>
+              <div>
+                <span class="stack-card__code mono">INFRA_MODULE_03</span>
+                <h3 class="stack-card__title">Infraestructura y Sistemas</h3>
+              </div>
+            </div>
+            <p class="stack-card__desc">
+              Despliegue soberano en servidores locales, seguridad perimetral, administración de sistemas Linux y automatización de procesos.
+            </p>
+            <div class="badge-grid">
+              <div class="tech-badge"><span class="tech-dot"></span>Redes On-Premise</div>
+              <div class="tech-badge"><span class="tech-dot"></span>Linux</div>
+              <div class="tech-badge"><span class="tech-dot"></span>Automatización</div>
+              <div class="tech-badge"><span class="tech-dot"></span>Ciberseguridad</div>
+              <div class="tech-badge"><span class="tech-dot"></span>Telemetría en Tiempo Real</div>
+              <div class="tech-badge"><span class="tech-dot"></span>Human-in-the-Loop</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PILARES DE INGENIERÍA (SECCIÓN DE VALOR)
+         ========================================== -->
+    <section class="section" id="arquitectura">
+      <div class="container">
+        <div class="section__header reveal">
+          <div class="section__eyebrow mono">03 // FILOSOFÍA DE DISEÑO</div>
+          <h2 class="section__title">Enfoque de Ingeniería</h2>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-card reveal">
+            <span class="pillar-card__num mono">01</span>
+            <h3 class="pillar-card__title">IA Soberana &amp; On-Premise</h3>
+            <p class="pillar-card__text">
+              Integración de LLMs locales con Ollama para garantizar que el código, la telemetría y los datos críticos permanezcan 100% dentro de tu infraestructura privada.
+            </p>
+          </div>
+          <div class="pillar-card reveal">
+            <span class="pillar-card__num mono">02</span>
+            <h3 class="pillar-card__title">Sistemas Autónomos con Control Humano</h3>
+            <p class="pillar-card__text">
+              La autonomía sin gobernanza es un riesgo. Diseño agentes capaces de diagnosticar y preparar acciones en milisegundos bajo validación Human-in-the-Loop.
+            </p>
+          </div>
+          <div class="pillar-card reveal">
+            <span class="pillar-card__num mono">03</span>
+            <h3 class="pillar-card__title">Backend Asíncrono de Alta Confiabilidad</h3>
+            <p class="pillar-card__text">
+              Arquitecturas limpias en Python y FastAPI con comunicación bidireccional por WebSockets para monitoreo continuo y baja latencia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         4. SECCIÓN DE CONTACTO DEDICADA
+         ========================================== -->
+    <section class="section section--alt" id="contacto">
+      <div class="container">
+        <div class="section__header reveal">
+          <div class="section__eyebrow mono">04 // INICIAR CONEXIÓN</div>
+          <h2 class="section__title">Contacto &amp; Propuestas</h2>
+          <p class="section__subtitle">
+            Disponible para posiciones <strong>Full-Time Remotas</strong>, consultoría en <strong>Arquitectura de IA / Backend Python</strong> y proyectos <strong>Freelance</strong> de alto impacto.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Columna izquierda: Canales directos interactivos -->
+          <div class="contact-channels reveal">
+            <div class="contact-banner">
+              <div class="contact-banner__status mono">
+                <span class="status-badge__dot"></span> DISPONIBILIDAD INMEDIATA // REMOTO &amp; FREELANCE
+              </div>
+              <h3 class="contact-banner__title">¿Buscas construir o escalar un sistema crítico?</h3>
+              <p class="contact-banner__text">
+                Ya sea para integrar agentes de IA locales en tu infraestructura, desarrollar un backend de alta velocidad en Python/FastAPI o colaborar en un equipo de ingeniería, conversemos.
+              </p>
+            </div>
+
+            <!-- Enlace directo 1: LinkedIn -->
+            <a href="https://www.linkedin.com/in/mateo-stortini-9518232a4" target="_blank" rel="noopener noreferrer" class="channel-card">
+              <div class="channel-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"/>
+                </svg>
+              </div>
+              <div class="channel-card__body">
+                <span class="channel-card__label mono">PERFIL PROFESIONAL</span>
+                <strong class="channel-card__value">linkedin.com/in/mateo-stortini-9518232a4</strong>
+              </div>
+              <span class="channel-card__arrow">↗</span>
+            </a>
+
+            <!-- Enlace directo 2: GitHub -->
+            <a href="https://github.com/mateogithu" target="_blank" rel="noopener noreferrer" class="channel-card">
+              <div class="channel-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.92.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.05 11.05 0 0 1 5.78 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+                </svg>
+              </div>
+              <div class="channel-card__body">
+                <span class="channel-card__label mono">REPOSITORIOS &amp; CÓDIGO</span>
+                <strong class="channel-card__value">github.com/mateogithu (Mateogithu)</strong>
+              </div>
+              <span class="channel-card__arrow">↗</span>
+            </a>
+
+            <!-- Enlace directo 3: Teléfono / WhatsApp con botón de copiado rápido -->
+            <div class="channel-card">
+              <div class="channel-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="channel-card__body">
+                <span class="channel-card__label mono">TELÉFONO / WHATSAPP DIRECTO</span>
+                <a href="https://wa.me/5493463443753" target="_blank" rel="noopener noreferrer" class="channel-card__value" id="phoneNumber">+54 9 3463 44-3753</a>
+              </div>
+              <button type="button" class="btn-copy mono" id="copyPhoneBtn" data-copy="3463443753" aria-label="Copiar número de teléfono">
+                Copiar
+              </button>
+            </div>
+
+            <!-- Enlace directo 4: Correo electrónico con botón de copiado rápido -->
+            <div class="channel-card channel-card--email">
+              <div class="channel-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
+              </div>
+              <div class="channel-card__body">
+                <span class="channel-card__label mono">CORREO ELECTRÓNICO DIRECTO</span>
+                <a href="mailto:mateostortini@gmail.com" class="channel-card__value" id="emailAddress">mateostortini@gmail.com</a>
+              </div>
+              <button type="button" class="btn-copy mono" id="copyEmailBtn" aria-label="Copiar dirección de correo">
+                Copiar
+              </button>
+            </div>
+          </div>
+
+          <!-- Columna derecha: Formulario de contacto funcional -->
+          <div class="contact-form-wrapper reveal">
+            <form class="contact-form" id="contactForm">
+              <div class="form-header mono">
+                <span>// ENVIAR PROPUESTA O MENSAJE</span>
+                <span class="text-accent">ENCRYPTED_CHANNEL</span>
+              </div>
+
+              <div class="form-group">
+                <label for="name" class="form-label mono">NOMBRE / EMPRESA *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-input"
+                  placeholder="Ej. Ana Gómez — Tech Lead"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label mono">CORREO DE CONTACTO *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="nombre@empresa.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="type" class="form-label mono">TIPO DE PROPUESTA</label>
+                <select id="type" name="type" class="form-input form-select">
+                  <option value="Oportunidad Laboral Remota">Oportunidad Laboral Remota (Full-Time / Part-Time)</option>
+                  <option value="Proyecto Freelance / Consultoría IA">Proyecto Freelance / Consultoría IA &amp; Backend</option>
+                  <option value="Demo Técnica de Victoria OS">Demo Técnica — Victoria OS</option>
+                  <option value="Otro">Otro motivo profesional</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label mono">MENSAJE / DETALLES DEL PROYECTO *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  class="form-input form-textarea"
+                  placeholder="Cuéntame sobre el rol, stack requerido o desafío técnico..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full">
+                <span>Preparar y Enviar Mensaje</span>
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+              </button>
+
+              <p class="form-Status mono" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       5. FOOTER / PIE DE PÁGINA
+       ========================================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="brand__prompt">&gt;_</span>
+        <span class="mono">Mateo Stortini</span>
+      </div>
+
+      <p class="footer__copy">
+        &copy; <span id="currentYear">2026</span> Todos los derechos reservados. Diseñado y desarrollado por <strong>Mateo Stortini</strong>.
+      </p>
+
+      <div class="footer__links mono">
+        <a href="#hero">↑ Top</a>
+        <a href="https://github.com/mateogithu" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/mateo-stortini-9518232a4" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://wa.me/5493463443753" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script principal -->
+  <script src="script.js"></script>
+</body>
+</html>
